@@ -11,7 +11,7 @@ class Sql_operation(object):
 		#实例变量
 		self.mydb = mydb
 		#打开数据库连接
-		self.db = pymysql.connect(host = "localhost",user = "root",password = "kybb82157108",db = "car_sale",charset = "utf8")
+		self.db = pymysql.connect(host = "",user = "",password = "",db = "car_sale",charset = "utf8")
 		#创建游标对象
 		self.cursor = self.db.cursor()
 
