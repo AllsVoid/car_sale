@@ -375,9 +375,10 @@ class ExcelOp(InquireOp):
 		xls_button = ExcelOp(None,title="销售管理系统",size=(1024,720))
 		xls_button.Show()
 		self.Close(True)
-
+"""
 if __name__ == '__main__':
 	app = wx.App()
 	login = SOperation(None,title="CSDN学生信息管理系统",size=(1024,668))
 	login.Show()
 	app.MainLoop()
+"""

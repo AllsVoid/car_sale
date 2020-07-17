@@ -80,8 +80,8 @@ class COperation(wx.Frame):
 			self.Close(True)
 		elif Bid == 14:
 			print("修改操作！")
-			update_button=UpdateOp(None,title="用户管理系统",size=(1024,668))
-			update_button.Show()
+			update_buttom=UpdateOp(None,title="用户管理系统",size=(1024,668))
+			update_buttom.Show()
 			self.Close(True)
 
 #继承COperation类，实现初始化操作界面
@@ -208,8 +208,8 @@ class AddOp(COperation):
 			self.Close(True)
 		elif Bid == 14:
 			print("修改操作！")
-			update_button=UpdateOp(None,title="用户管理系统",size=(1024,668))
-			update_button.Show()
+			update_buttom=UpdateOp(None,title="用户管理系统",size=(1024,668))
+			update_buttom.Show()
 			self.Close(True)
 
 	def AddAffirm(self,event):
@@ -275,10 +275,7 @@ class UpdateOp(COperation):
 			inquire_button.Show()
 			self.Close(True)
 		elif Bid == 11:
-			print("添加操作！")
-			add_button = AddOp(None,title="用户管理系统",size=(1024,668))
-			add_button.Show()
-			self.Close(True)
+			pass
 		elif Bid == 12:
 			print("删除操作！")
 			del_button = DelOp(None,title="用户管理系统",size=(1024,668))
@@ -288,8 +285,8 @@ class UpdateOp(COperation):
 			self.Close(True)
 		elif Bid == 14:
 			print("修改操作！")
-			update_button=UpdateOp(None,title="用户管理系统",size=(1024,668))
-			update_button.Show()
+			update_buttom=UpdateOp(None,title="用户管理系统",size=(1024,668))
+			update_buttom.Show()
 			self.Close(True)
 	def UpdateAffirm(self,event):
 		#连接car_sale数据库
@@ -344,11 +341,6 @@ class DelOp(InquireOp):
 		elif Bid == 12:
 			pass
 		elif Bid == 13:
-			self.Close(True)
-		elif Bid == 14:
-			print("修改操作！")
-			update_button = UpdateOp(None,title="用户管理系统",size=(1024,668))
-			update_button.Show()
 			self.Close(True)
 
 	def DelAffirm(self,event):

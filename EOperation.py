@@ -284,7 +284,9 @@ class UpdateOp(EOperation):
 			inquire_button.Show()
 			self.Close(True)
 		elif Bid == 11:
-			pass
+			print("添加操作！")
+			add_button=AddOp(None,title="员工管理系统",size=(1024,668))
+			add_button.Show()
 		elif Bid == 12:
 			print("删除操作！")
 			del_button = DelOp(None,title="员工管理系统",size=(1024,668))
@@ -293,10 +295,7 @@ class UpdateOp(EOperation):
 		elif Bid == 13:
 			self.Close(True)
 		elif Bid == 14:
-			print("修改操作！")
-			update_buttom=UpdateOp(None,title="员工管理系统",size=(1024,668))
-			update_buttom.Show()
-			self.Close(True)
+			pass
 	def UpdateAffirm(self,event):
 		#连接car_sale数据库
 		op = Sql_operation("car_sale")
