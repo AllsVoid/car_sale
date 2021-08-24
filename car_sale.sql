@@ -93,7 +93,6 @@ CREATE TABLE `custom`  (
 -- ----------------------------
 -- Records of custom
 -- ----------------------------
-INSERT INTO `custom` VALUES ('byc', 20, '女', '123456', 0);
 INSERT INTO `custom` VALUES ('wky', 20, '男', '123456', 0);
 INSERT INTO `custom` VALUES ('丰星', 53, '男', '13605404466', 0);
 INSERT INTO `custom` VALUES ('侯贞', 42, '女', '13202738457', 0);
